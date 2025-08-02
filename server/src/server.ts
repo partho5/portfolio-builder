@@ -2,13 +2,16 @@
 
 import app from './app';
 import dotenv from 'dotenv';
-import router from './routes/protected_routes';
+import path from 'path';
 
-dotenv.config();
+// Load .env file from the server directory
+dotenv.config({ path: path.join(__dirname, '..', '.env') });
+
 const PORT = process.env.PORT || 5000;
 
-app.use('/api', router);
-
+// Start the server
 app.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}!`);
-});
+  console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`📊 GraphQL endpoint: http://localhost:${PORT}/graphql`);
+  console.log(`🔗 REST API: http://localhost:${PORT}/api`);
+}); 

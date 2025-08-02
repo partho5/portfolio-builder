@@ -101,7 +101,7 @@ export default function UsernameClient({ children, profile }: { children: React.
                                 className="relative bg-slate-100 w-4/5 md:w-80 md:flex-shrink-0 h-full overflow-y-auto">
                                 <div className="p-4 pt-0 md:pt-8">
                                     <img
-                                        src="https://partho.datamatric.com/images/partho-informal.jpg"
+                                        src="https://avatars.githubusercontent.com/u/8064717?v=4"
                                         alt="Profile"
                                         className="rounded-full mx-auto"
                                     />
