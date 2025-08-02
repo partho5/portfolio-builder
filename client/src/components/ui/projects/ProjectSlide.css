@@ -1,0 +1,22 @@
+
+.prev-btn,
+.next-btn{
+    background-color: transparent;
+    transition: 0.3s;
+}
+.project:hover .prev-btn,
+.project:hover .next-btn{
+    @apply bg-gray-200;
+}
+
+.media-container{
+    transition: 0.3s ease-in-out;
+}
+.media-container:hover{
+    transform: scale(1.2);
+}
+
+.project:hover .info .project-link{
+    color: blue;
+    text-decoration: underline;
+}

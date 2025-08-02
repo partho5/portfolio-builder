@@ -5,16 +5,16 @@
   "description": "A template project integrating Next.js with Express.js using Auth0 for authentication. This repository contains configurations and scripts for both the client and server, ensuring seamless development and deployment.",
   "main": "index.js",
   "scripts": {
-    "client": "cd client && pnpm run dev",
-    "server": "cd server && pnpm run dev",
-    "postinstall": "(cd client && pnpm install); (cd server && pnpm install)",
+    "client": "pnpm --prefix client run dev",
+    "server": "pnpm --prefix server run dev",
+    "postinstall": "pnpm install --prefix client && pnpm install --prefix server",
     "dev": "concurrently \"pnpm run client\" \"pnpm run server\"",
-    "start": "npm run start:client & npm run start:server",
-    "start:client": "cd client && npm run dev",
-    "start:server": "cd server && npm run dev",
-    "build": "npm run build:client & npm run build:server",
-    "build:client": "cd client && npm run build",
-    "build:server": "cd server && npm run build"
+    "start": "concurrently \"pnpm run start:client\" \"pnpm run start:server\"",
+    "start:client": "pnpm --prefix client run start",
+    "start:server": "pnpm --prefix server run start",
+    "build": "concurrently \"pnpm run build:client\" \"pnpm run build:server\"",
+    "build:client": "pnpm --prefix client run build",
+    "build:server": "pnpm --prefix server run build"
   },
   "keywords": [
     "example",
@@ -42,6 +42,11 @@
     "pnpm": ">=8.8.0"
   },
   "devDependencies": {
-    "concurrently": "^8.2.1"
+    "concurrently": "^8.2.1",
+    "cross-env": "^7.0.3",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "@auth0/nextjs-auth0": "^3.5.0"
   }
 }

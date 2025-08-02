@@ -1,0 +1,174 @@
+/*styles/animations.module.css*/
+
+
+/* Fade Animations */
+.fadeIn {
+    animation: fadeIn 0.6s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide Animations */
+.slideUp {
+    animation: slideUp 0.8s ease-out forwards;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slideDown {
+    animation: slideDown 0.8s ease-out forwards;
+    transform: translateY(-50px);
+    opacity: 0;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slideLeft {
+    animation: slideLeft 0.8s ease-out forwards;
+    transform: translateX(50px);
+    opacity: 0;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideRight {
+    animation: slideRight 0.8s ease-out forwards;
+    transform: translateX(-50px);
+    opacity: 0;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Pulse Animation */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Bounce Animation */
+.bounce {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 53%, 80%, 100% {
+        transform: translate3d(0, 0, 0);
+    }
+    40%, 43% {
+        transform: translate3d(0, -30px, 0);
+    }
+    70% {
+        transform: translate3d(0, -15px, 0);
+    }
+    90% {
+        transform: translate3d(0, -4px, 0);
+    }
+}
+
+/* Scale Animation */
+.scaleIn {
+    animation: scaleIn 0.5s ease-out forwards;
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Rotate Animation */
+.rotateIn {
+    animation: rotateIn 0.6s ease-out forwards;
+    transform: rotate(-180deg);
+    opacity: 0;
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-180deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+/* Stagger Animation Support */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+
+/* Hover Animations */
+.hoverLift:hover {
+    transform: translateY(-8px);
+    transition: transform 0.3s ease;
+}
+
+.hoverGlow:hover {
+    filter: brightness(1.1);
+    transition: filter 0.3s ease;
+}

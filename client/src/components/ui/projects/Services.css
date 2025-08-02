@@ -1,0 +1,18 @@
+ul.service-list {
+    list-style: none; /* Remove default bullets or numbers */
+    padding: 0; /* Remove default padding */
+}
+
+ul.service-list li {
+    position: relative; /* Create a positioning context for the custom marker */
+    margin-left: 4px;
+    padding-left: 30px; /* Space for the custom marker */
+}
+
+ul.service-list li::before {
+    content: "✔️"; /* The custom marker */
+    position: absolute; /* Position the marker */
+    left: 0; /* Align marker to the left */
+    top: 0; /* Align marker to the top */
+    color: green; /* Customize the color of the marker */
+}

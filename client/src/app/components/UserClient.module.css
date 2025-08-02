@@ -1,0 +1,37 @@
+/* client/src/app/components/UserClient.module.css */
+
+/* Base clean background - no radials, just soft gradient */
+.projectBackground {
+    @apply transition-all duration-500 ease-in-out transform;
+    /*background: linear-gradient(135deg,*/
+    /*#f8fafc 0%,*/
+    /*#e2e8f0 35%,*/
+    /*#f1f5f9 70%,*/
+    /*#e0f2fe 100%);*/
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.projectBackground::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    /*background: url("https://img.freepik.com/premium-vector/vector-colorful-abstract-background_987701-2744.jpg");*/
+    background:
+            linear-gradient(45deg,
+            rgba(80, 0, 60, 0.4) 0%,
+            rgba(0, 255, 255, 0.2) 25%,
+            rgba(255, 100, 0, 0.3) 50%,
+            rgba(150, 0, 255, 0.2) 75%,
+            rgba(255, 255, 0, 0.3) 100%
+            ),
+            url("https://img.freepik.com/premium-vector/vector-colorful-abstract-background_987701-2744.jpg");
+    /*background-repeat: no-repeat;*/
+    background-size: contain;
+    opacity: 0.1; /* Adjust visibility here */
+    z-index: -1;
+}
+
+

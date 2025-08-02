@@ -1,0 +1,192 @@
+
+
+/* Soft blue gradient */
+.bgSoftBlue {
+    @apply transition-all duration-500 ease-in-out transform;
+    background: linear-gradient(135deg,
+    #dbeafe 0%,
+    #bfdbfe 35%,
+    #93c5fd 70%,
+    #60a5fa 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Soft purple gradient */
+.bgSoftPurple {
+    @apply transition-all duration-500 ease-in-out transform;
+    background: linear-gradient(135deg,
+    #f3e8ff 0%,
+    #e9d5ff 35%,
+    #d8b4fe 70%,
+    #c084fc 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Soft pink gradient */
+.bgSoftPink {
+    @apply transition-all duration-500 ease-in-out transform;
+    background: linear-gradient(135deg,
+    #fdf2f8 0%,
+    #fce7f3 35%,
+    #fbcfe8 70%,
+    #f9a8d4 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Soft green gradient */
+.bgSoftGreen {
+    @apply transition-all duration-500 ease-in-out transform;
+    background: linear-gradient(135deg,
+    #ecfdf5 0%,
+    #d1fae5 35%,
+    #a7f3d0 70%,
+    #6ee7b7 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Soft orange gradient */
+.bgSoftOrange {
+    @apply transition-all duration-500 ease-in-out transform;
+    background: linear-gradient(135deg,
+    #fff7ed 0%,
+    #ffedd5 35%,
+    #fed7aa 70%,
+    #fdba74 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Neutral warm gradient */
+.bgNeutralWarm {
+    @apply transition-all duration-500 ease-in-out transform;
+    background: linear-gradient(135deg,
+    #fafaf9 0%,
+    #f5f5f4 35%,
+    #e7e5e4 70%,
+    #d6d3d1 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Soft teal gradient */
+.bgSoftTeal {
+    @apply transition-all duration-500 ease-in-out transform;
+    background: linear-gradient(135deg,
+    #f0fdfa 0%,
+    #ccfbf1 35%,
+    #99f6e4 70%,
+    #5eead4 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Multi-color soft gradient */
+.bgMultiSoft {
+    @apply transition-all duration-500 ease-in-out transform;
+    background: linear-gradient(135deg,
+    #f0f9ff 0%,
+    #e0f2fe 25%,
+    #f0fdf4 50%,
+    #fef3c7 75%,
+    #fef7cd 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Diagonal soft gradient */
+.bgDiagonalSoft {
+    @apply transition-all duration-500 ease-in-out transform;
+    background: linear-gradient(45deg,
+    #f8fafc 0%,
+    #e0f2fe 30%,
+    #f0f9ff 60%,
+    #f1f5f9 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Vertical soft gradient */
+.bgVerticalSoft {
+    @apply transition-all duration-500 ease-in-out transform;
+    background: linear-gradient(180deg,
+    #f8fafc 0%,
+    #f1f5f9 50%,
+    #e2e8f0 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated gradient (optional) */
+.bgAnimated {
+    @apply transition-all duration-500 ease-in-out transform;
+    background: linear-gradient(-45deg,
+    #f8fafc,
+    #e0f2fe,
+    #f0f9ff,
+    #f1f5f9);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Dark mode variants */
+@media (prefers-color-scheme: dark) {
+    .projectBackground {
+        background: linear-gradient(135deg,
+        #0f172a 0%,
+        #1e293b 35%,
+        #334155 70%,
+        #475569 100%);
+    }
+
+    .bgSoftBlue {
+        background: linear-gradient(135deg,
+        #1e3a8a 0%,
+        #1e40af 35%,
+        #1d4ed8 70%,
+        #2563eb 100%);
+    }
+
+    .bgSoftPurple {
+        background: linear-gradient(135deg,
+        #581c87 0%,
+        #6b21a8 35%,
+        #7c3aed 70%,
+        #8b5cf6 100%);
+    }
+
+    .bgSoftPink {
+        background: linear-gradient(135deg,
+        #831843 0%,
+        #9d174d 35%,
+        #be185d 70%,
+        #db2777 100%);
+    }
+
+    .bgSoftGreen {
+        background: linear-gradient(135deg,
+        #14532d 0%,
+        #166534 35%,
+        #15803d 70%,
+        #16a34a 100%);
+    }
+
+    .bgSoftOrange {
+        background: linear-gradient(135deg,
+        #9a3412 0%,
+        #c2410c 35%,
+        #dc2626 70%,
+        #ea580c 100%);
+    }
+}

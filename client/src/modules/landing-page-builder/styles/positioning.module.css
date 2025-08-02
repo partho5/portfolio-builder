@@ -1,0 +1,58 @@
+/* styles/positioning.module.css */
+
+.positionContainer {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.positionLeft {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.positionRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+.positionCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Positioning */
+@media (max-width: 768px) {
+    .positionLeft,
+    .positionRight {
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Grid Layout Support */
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Flexbox Layout Support */
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: stretch;
+}
+
+.flexItem {
+    flex: 1;
+    min-width: 300px;
+}
